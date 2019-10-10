@@ -14,13 +14,13 @@ import java.util.ArrayList;
  */
 public class Artista {
     String nome;
-    String[] integrantes;
+    
     String gênero;
     ArrayList<Disco> discos = new ArrayList<>();
 
-    public Artista(String nome, String[] integrantes, String gênero) {
+    public Artista(String nome, String gênero) {
         this.nome = nome;
-        this.integrantes = integrantes;
+       
         this.gênero = gênero;
     }
 
@@ -32,13 +32,7 @@ public class Artista {
         this.nome = nome;
     }
 
-    public String[] getIntegrantes() {
-        return integrantes;
-    }
-
-    public void setIntegrantes(String[] integrantes) {
-        this.integrantes = integrantes;
-    }
+  
 
     public String getGênero() {
         return gênero;

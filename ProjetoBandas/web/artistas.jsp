@@ -11,7 +11,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title> Artistas - iTons</title>
+        <title> Artistas</title>
     </head>
     <body>
         <h1> Pagina Inicial</h1>
@@ -25,28 +25,43 @@
         <hr/>
         
         <h1> Artistas</h1>
+        
+     
         <table border="1">
             <tr>
+                
                 <th>Nome</th>
-                <th>Integrantes</th>
                 <th>Gênero</th>
                 <th>Discos</th>
+                <th>Comandos</th>
             </tr>
             
             <%for (Artista artista: Db.getArtistas()){ %>
             <tr>
+                
                 <td><%= artista.getNome() %></td>
-                <td>
-                    <%for(String integrante: artista.getIntegrantes()){%>
-                    <%= integrante %> <br/>
-                    <%}%>
-                </td>
+                
                 <td><%= artista.getGênero() %></td>
-                <td><%= artista.getDiscos().size() %></td>
+                <td> <a href="lista-disco.jsp"><button class="button">Cadastrar Disco</button></a></td>
+                <td>
+                     <a href="alterar-banda.jsp"><button class="button">Alterar</button></a>
+                     <a href="excluir-banda.jsp"><button class="button">Excluir</button></a>
+                </td>
                 
             </tr>
             <%}%>
         </table>
+        <br/>
+        <br/>
+         
+         
+                            
+             <a href="inserir-artista.jsp"><button class="button">Inserir</button></a>
+                      
+            
+            
+                          
+                       
         
     </body>
 </html>
