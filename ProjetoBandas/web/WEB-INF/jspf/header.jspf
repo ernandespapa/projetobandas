@@ -1,0 +1,14 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+
+<header>
+
+
+
+    <a href="index.jsp"> Home|</a>
+
+    <a href="lista-banda.jsp">Lista Bandas|</a>
+    
+    <a href="lista-album.jsp">Lista Album</a>
+
+</header>

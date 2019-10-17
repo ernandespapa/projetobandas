@@ -14,12 +14,8 @@
     </head>
     <body>
         
-          <h2> 
-            <a href="index.jsp"> Home </a> ||
-            <a href="artistas.jsp"> Artistas </a> ||
-            <a href="discos.jsp"> Discos </a> ||
-            <a href="musicas.jsp"> Musicas </a> ||
-        </h2>
+         <%@include file="WEB-INF/jspf/header.jspf"%>
+         
         <h1> Pagina Inicial</h1>
         <h2>Artistas: <u><%=Db.getArtistas().size() %></u></h2>
         <h2>Discos <u><%=Db.getDiscos().size() %></u></h2>

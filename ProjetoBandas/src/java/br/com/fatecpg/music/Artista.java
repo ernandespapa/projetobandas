@@ -15,13 +15,13 @@ import java.util.ArrayList;
 public class Artista {
     String nome;
     
-    String gênero;
+    
     ArrayList<Disco> discos = new ArrayList<>();
 
-    public Artista(String nome, String gênero) {
+    public Artista(String nome) {
         this.nome = nome;
        
-        this.gênero = gênero;
+        
     }
 
     public String getNome() {
@@ -34,13 +34,7 @@ public class Artista {
 
   
 
-    public String getGênero() {
-        return gênero;
-    }
-
-    public void setGênero(String gênero) {
-        this.gênero = gênero;
-    }
+ 
 
     public ArrayList<Disco> getDiscos() {
         return discos;
