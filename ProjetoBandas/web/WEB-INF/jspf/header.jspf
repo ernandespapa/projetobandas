@@ -7,8 +7,10 @@
 
     <a href="index.jsp"> Home|</a>
 
-    <a href="lista-banda.jsp">Lista Bandas|</a>
+    <a href="lista-artista.jsp">Lista Artistas|</a>
     
-    <a href="lista-album.jsp">Lista Album</a>
+    <a href="lista-Disco.jsp">Lista Disco</a>
+    
+    <a href="lista-Musica.jsp">Lista Musica</a>
 
 </header>
