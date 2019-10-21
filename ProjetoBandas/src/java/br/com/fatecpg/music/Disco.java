@@ -14,15 +14,14 @@ import java.util.ArrayList;
 public class Disco {
     private String nome;
     private String gravadora;
-    private int ano;
-    ArrayList<Musica> musicas = new ArrayList<>();
+    private String ano;
+    private ArrayList<Musica> musicas = new ArrayList<>();
     
-    public Artista getArtista(){
-        return Db.getArtista(this);
+   
+    public Disco() {
     }
     
-    
-    public Disco(String nome, String gravadora, int ano) {
+    public Disco(String nome, String gravadora, String ano) {
         this.nome = nome;
         this.gravadora = gravadora;
         this.ano = ano;
@@ -52,13 +51,15 @@ public class Disco {
         this.gravadora = gravadora;
     }
 
-    public int getAno() {
+    public String getAno() {
         return ano;
     }
 
-    public void setAno(int ano) {
+    public void setAno(String ano) {
         this.ano = ano;
     }
     
-    
+     public Artista getArtista(){
+        return Db.getArtista(this);
+    }
 }

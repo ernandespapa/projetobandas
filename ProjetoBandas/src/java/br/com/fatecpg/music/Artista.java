@@ -13,15 +13,27 @@ import java.util.ArrayList;
  * @author a
  */
 public class Artista {
-    String nome;
+    private String nome;
+    private String genero;
+    private String membros;
+    private ArrayList<Disco> discos = new ArrayList<>();
     
-    
-    ArrayList<Disco> discos = new ArrayList<>();
+     public Artista() {
+    }
 
-    public Artista(String nome) {
+    public Artista(String nome, String genero, String membros) {
         this.nome = nome;
-       
-        
+        this.genero = genero;
+        this.membros = membros;
+         
+    }
+
+    public String getMembros() {
+        return membros;
+    }
+
+    public void setMembros(String membros) {
+        this.membros = membros;
     }
 
     public String getNome() {
@@ -32,9 +44,15 @@ public class Artista {
         this.nome = nome;
     }
 
-  
+    public String getGenero() {
+        return genero;
+    }
 
- 
+    public void setGenero(String genero) {
+        this.genero = genero;
+    }
+    
+    
 
     public ArrayList<Disco> getDiscos() {
         return discos;
@@ -43,6 +61,8 @@ public class Artista {
     public void setDiscos(ArrayList<Disco> discos) {
         this.discos = discos;
     }
+
+  
     
     
     

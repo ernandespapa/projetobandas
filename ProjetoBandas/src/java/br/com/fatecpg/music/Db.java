@@ -6,13 +6,15 @@
 package br.com.fatecpg.music;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
 /**
  *
  * @author a
  */
 public class Db {
-   static ArrayList<Artista> artistas;
+   private static ArrayList<Artista> artistas;
    public static ArrayList<Artista> getArtistas(){
        if (artistas == null){
            artistas = new ArrayList<>();

@@ -1,6 +1,6 @@
 <%-- 
-    Document   : inserir-banda
-    Created on : 10/09/2019, 16:50:34
+    Document   : inserir-artista
+    Created on : 10/10/2019
     Author     : ernandes
 --%>
 <%@page import="br.com.fatecpg.music.Artista"%>
@@ -10,21 +10,25 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Inserir - Banda</title>
+        <title>Inserir - Artista</title>
     </head>
     <body>
         <%@include file="WEB-INF/jspf/header.jspf"%>
         <%
             if (request.getParameter("inserir") != null) {
                 String nome = request.getParameter("nome");
+                String genero = request.getParameter("genero");
+                String membros = request.getParameter("membros");
                 
-                Artista c = new Artista(nome);
+                Artista c = new Artista(nome, genero, membros);
                 c.setNome(nome);
+                c.setGenero(genero);
+                c.setMembros(membros);
                 Db.getArtistas().add(c);
-                response.sendRedirect("lista-banda.jsp");
+                response.sendRedirect("lista-artista.jsp");
             }else if(request.getParameter("cancelar") != null){
             
-                response.sendRedirect("lista-banda.jsp");
+                response.sendRedirect("lista-artista.jsp");
                 
             }
         %>
@@ -34,6 +38,16 @@
                     <div>
                         <label>Nome: </label>
                         <input type="text" name="nome" class="form-control"/>
+                    </div>
+                    <br/>
+                    <div>
+                        <label>Genero: </label>
+                        <input type="text" name="genero" class="form-control"/>
+                    </div>
+                    <br/>
+                    <div>
+                        <label>Membros: </label>
+                        <input type="text" name="membros" class="form-control"/>
                     </div>
                     
                     
