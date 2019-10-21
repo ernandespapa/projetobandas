@@ -1,16 +1,15 @@
 <%-- any content can be specified here e.g.: --%>
 <%@ page pageEncoding="UTF-8" %>
 
+<link rel= "stylesheet" href ="css/style.css">
 <header>
-
-
-
-    <a href="index.jsp"> Home|</a>
-
-    <a href="lista-artista.jsp">Lista Artistas|</a>
-    
-    <a href="lista-Disco.jsp">Lista Disco</a>
-    
-    <a href="lista-Musica.jsp">Lista Musica</a>
-
+<div class="header">
+        <h1 style="text-align: center;"> Projeto 04: Bandas, Discos e Músicas </h1>
+</div>  
+    <div class="topnav">
+        <a href="/projetobandas/index.jsp" role="button">HOME</a>
+        <a  href="/projetobandas/banda.jsp" role="button">BANDAS</a>
+        <a  href="/projetobandas/discos.jsp" role="button">DISCOS</a>
+        <a  href="/projetobandas/musica.jsp" role="button">MÚSICAS</a>
+    </div>
 </header>
